@@ -1,0 +1,21 @@
+web:
+  build: .
+  volumes:
+    - .:/myapp
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  environment:
+    - RAILS_ENV=development
+    - SPREE_DATABASE_PASSWORD=verysecret
+#  command:
+#    - bin/bootstrap.sh
+  #env#_file:
+  #  - '.env.web'
+db:
+  image: mysql
+  volumes:
+    - /data/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=verysecret
