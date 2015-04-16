@@ -1,28 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a vanilla spree version with docker-compose
 
-Things you may want to cover:
+Steps to run it:
 
-* Ruby version
+* Install Docker and Docker Compose
 
-* System dependencies
+* docker-compose up
 
-* Configuration
+* Create Spree Seed Data: docker-compose run web rake db:bootstrap
 
-* Database creation
+* docker-compose up
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
