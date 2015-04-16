@@ -6,6 +6,8 @@ Steps to run it:
 
 * Install Docker and Docker Compose
 
+* vendorize: bundle package --all
+
 * docker-compose up
 
 * Create Spree Seed Data: docker-compose run web rake db:bootstrap
