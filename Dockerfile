@@ -12,5 +12,5 @@ RUN cd /myapp && bundle install --deployment --path /var/bundle --without develo
 
 ADD . /myapp
 WORKDIR /myapp
-ADD public/assets /myapp/public/assets
+#RUN bundle exec rake assets:precompile --trace
 CMD ["rails","server","-b","0.0.0.0"]
